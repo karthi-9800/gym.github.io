@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to my fittness workshop">
+    <meta name="author" content="Karthi E">
+    <meta name="keywords" content="html,css,java script">
+    <meta property ="og:Title" content="Bootstrap">
+    <meta property="og:url" content="github.io">
+    <meta property="og:description" content="Welcome to my fittness workshop">
+    <meta property="og:image" content="https://static.vecteezy.com/system/resources/previews/000/438/564/original/woman-at-gymnasium-fitness-poster-vector.jpg">
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/8729/8729468.png">
+    <title>Gym Workshop</title>
+   <style>
+    #workshop:hover{
+font-weight: bold;
+    }
+        #home:hover{
+font-weight: bold;
+}
+    #contact:hover{
+font-weight: bold;
+}
+    
+   </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Gym Workshop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item " id="home">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item" id="workshop">
+                        <a class="nav-link" href="#">Workshops</a>
+                  </li>
+                    <li class="nav-item" id="contact">
+                        <a class="nav-link" href="#">Contact</a>
+             </li>
+         </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--main Section-->
+    <header class="bg-primary text-white text-center p-5 mb-5">
+        <h1>Welcome to Our Gym Workshop</h1>
+        <p>Transform your fitness with expert-led workshops</p>
+        <button class="btn  btn-light" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up Now</button>
+    </header>
+
+    <!-- Workshop section-->
+<div class="container">
+    <div class="row text-center" >
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://images.squarespace-cdn.com/content/v1/5f4f860a3fbc5771c7d81658/1706007217062-FXB4FNI9UEWNYGAZZVGV/8.jpg/300x200" alt="yoga image" 
+                class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Yoga Workshop</h5>
+                    <p class="card-text">Improve your flexibility and mental peace with our Yoga workshop.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#yogaModal">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="https://th.bing.com/th/id/R.32cc27e6fb2f230d36ee016d74c54777?rik=Pu%2fd4d7GEZdzuQ&riu=http%3a%2f%2fwww.jamesarmstrongphysio.com%2fuploads%2f1%2f2%2f1%2f5%2f121563711%2fstrength-training-runners-button_orig.jpg&ehk=%2bmRLkfg%2fMdqV5L%2bnMFY1pb3i3u4p0M1O5IKcQTsfdxo%3d&risl=&pid=ImgRaw&r=0/300x200" alt="strength image" 
+        class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Strength Training</h5>
+            <p class="card-text">Boost your strength and endurance in this intensive workout session.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#strengthModal">Learn More</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="https://th.bing.com/th/id/OIP.1kHZdkDui51qoOEHl0FD0QHaHa?w=735&h=735&rs=1&pid=ImgDetMain/300x200" alt="HIIT Session" 
+        class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">HIIT Session</h5>
+            <p class="card-text">Burn fat and improve cardiovascular fitness with high-intensity interval training.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hiitModal">Learn More</button>
+        </div>
+    </div>
+
+</div>
+ </div>
+</div>
+
+
+ <!-- Modal Popups -->
+    <!-- Yoga-->
+
+<div class="modal fade" id="yogaModal" tabindex="-1" aria-labelledby="yogaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="yogaModalLable">yoga Workshop</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+        </div>
+        <div class="modal-body">
+            Join our Yoga workshop to enhance your flexibility, strength, and peace of mind. Classes are suitable for all levels.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" >Sign Up</button>
+    
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<!--modal strength-->
+<div class="modal fade" id="strengthModal" tabindex="-1" aria-labelledby="strengthModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="strengthModal">Strength Training Workshop</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+        </div>
+        <div class="modal-body">
+          
+            This workshop is focused on building muscular strength through a variety of equipment and bodyweight exercises.
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" >Sign Up</button>
+    
+        </div>
+    </div>
+    </div>
+</div>
+
+
+    <!-- HIIT Modal -->
+    <div class="modal fade" id="hiitModal" tabindex="-1" aria-labelledby="hiitModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="hiitModalLabel">HIIT Session</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+                <div class="modal-body">
+                    Experience a high-intensity interval training session that will push your limits and improve your overall fitness.
+                </div>
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+             </div>
+            </div>
+        </div>
+    </div>
+
+
+           <!-- Sign Up Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signUpModalLabel">Sign Up for Workshop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Enter your details to sign up for one of our fitness workshops.
+                    <form id="signUpForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required placeholder="Enter Yor name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="number" class="form-label">Mobile</label>
+                            <input type="number" class="form-control" id="number" required placeholder="Enter Your Number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required placeholder="Enter You Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="YourPlane">Choose Your Workout</label>
+                            <select class="form-control" id="YourPlan">
+                              <option>Yoga</option>
+                              <option>Strength Training</option>
+                              <option>Hitt Workout</option>
+                              
+                            </select>
+                          </div><br>
+                          
+                        
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Success Msg Alerts -->
+      <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Submission Success</h5>
+                    <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Success!</strong>you have successfully signed up for the worshop.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-success" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+      </div>
+
+     <!-- submission and success alert -->
+<script>
+    const signUpForm = document.getElementById('signUpForm');
+
+    signUpForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+    
+        const signUpModal = bootstrap.Modal.getInstance(document.getElementById('signUpModal'));
+        signUpModal.hide();
+
+        
+        const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+        successModal.show();
+
+    
+        signUpForm.reset();
+    });
+</script>
+
+
+     
+      
+
+     <!--footer-->
+<footer class="bg-dark text-white text-center py-3">
+    <p>© 2024 Gym Workshop. All Rights Reserved.</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
